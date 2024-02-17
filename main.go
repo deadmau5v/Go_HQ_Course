@@ -54,6 +54,7 @@ func buildIndex() {
 }
 
 func main() {
+	// 入口
 	buildIndex()
 
 	r := gin.Default()
@@ -70,6 +71,7 @@ func main() {
 }
 
 func index(ctx *gin.Context) {
+	// 主页
 	tmp, err := template.ParseFiles("templates/index.html")
 	if err != nil {
 		fmt.Println("模板解析错误!", err)
@@ -82,6 +84,7 @@ func index(ctx *gin.Context) {
 }
 
 func search(ctx *gin.Context) {
+	// 搜索页面
 	word := ctx.PostForm("word")
 	var msg string
 	results := make([]string, 0)
@@ -122,6 +125,7 @@ func search(ctx *gin.Context) {
 }
 
 func courseTable(ctx *gin.Context) {
+	// 口令复制页面
 	tmp, err := template.ParseFiles("templates/courseTable.html")
 	if err != nil {
 		fmt.Println("异常！读取courseTable模板失败，", err)
