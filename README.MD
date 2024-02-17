@@ -1,6 +1,6 @@
 ![LOGO](./static/logo/logo.png)
 
-# 湖汽 课程表 项目 (Go语言重构)
+# 湖汽 课程表 项目 (Go语言重构 开发中)
 
 [![Python 3](https://img.shields.io/badge/Python-3.x-blue.svg)]()
 
